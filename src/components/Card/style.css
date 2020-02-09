@@ -21,7 +21,7 @@
 }
 
 .LowerCard {
-    padding-top: 30px;
+    padding-top: 5vh;
     text-align: left;
     font-size: 24px;
     font-weight: 200;
@@ -34,7 +34,7 @@
 }
 
 .Image {
-    margin-top: 45px;
+    margin-top: 5vh;
     border-radius: 100%;
     max-width: 300px;
     max-height: 300px;
