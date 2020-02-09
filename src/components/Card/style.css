@@ -1,0 +1,41 @@
+.Card {
+    background-color: #000000aa;
+    height: 50vh;
+    width: 60vw;
+    z-index: 1;
+    padding: 60px 60px 60px 68px;
+    display: flex;
+    flex-direction: row;
+}
+
+.LeftCard {
+    flex: 2;
+}
+
+.UpperCard {
+    text-align: left;
+}
+
+.RightCard {
+    flex: 1;
+}
+
+.LowerCard {
+    padding-top: 30px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.CardTitleText {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.Image {
+    margin-top: 45px;
+    border-radius: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
