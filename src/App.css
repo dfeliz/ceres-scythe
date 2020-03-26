@@ -1,4 +1,9 @@
+body {
+  overflow: hidden;
+}
+
 .App {
   background-color: #282c34;
   color: white;
+  overflow: hidden;
 }

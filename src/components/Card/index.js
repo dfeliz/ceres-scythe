@@ -1,9 +1,17 @@
 import React from 'react';
+import ProfileImage from '../../static/res/IMG_8980.jpg';
 import './style.css';
 
 const Card = () => (
     <div className="Card">
         <div className="LeftCard">
+            <img 
+                src={ProfileImage}
+                alt="Me"
+                className="Image"
+            />
+        </div>
+        <div className="RightCard">
             <div className="UpperCard">
                 <h3 className="CardTitleText">
                     Hi!
@@ -20,13 +28,6 @@ const Card = () => (
                     Currently working at Soluciones GBH.
                 </p>
             </div>
-        </div>
-        <div className="RightCard">
-            <img 
-                src="https://gbh.com.do/wp-content/uploads/2019/05/03-1.jpg"
-                alt="Me"
-                className="Image"
-            />
         </div>
     </div>
 )
