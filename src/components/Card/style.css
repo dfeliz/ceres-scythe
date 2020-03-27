@@ -1,6 +1,6 @@
 .Card {
     background-color: #000000aa;
-    height: 50vh;
+    height: 450px;
     width: 60vw;
     z-index: 1;
     padding: 60px 60px 60px 68px;
@@ -8,15 +8,16 @@
     flex-direction: row;
 }
 
-.LeftCard {
+.RightCard {
     flex: 2;
+    margin-left: 20px;
 }
 
 .UpperCard {
     text-align: left;
 }
 
-.RightCard {
+.LeftCard {
     flex: 1;
 }
 
@@ -31,11 +32,81 @@
     margin: 0;
     font-size: 80px;
     font-weight: 200;
+    white-space: nowrap;
 }
 
 .Image {
     margin-top: 5vh;
-    border-radius: 100%;
-    max-width: 300px;
-    max-height: 300px;
+    border-radius: 50%;
+    width: 290px;
+    height: 280px;
+}
+
+@media only screen and (max-height: 800px), screen and (max-width: 1600px) {
+    .CardTitleText {
+        margin: 0;
+        font-size: 60px;
+        font-weight: 200;
+    }
+    
+    .Image {
+        margin-top: 5vh;
+        border-radius: 50%;
+        width: 220px;
+        height: 210px;
+    }
+
+    .Card {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-height: 600px), screen and (max-width: 1250px) {
+    .CardTitleText {
+        margin: 0;
+        font-size: 45px;
+        font-weight: 200;
+    }
+
+    .Image {
+        margin-top: 5vh;
+        border-radius: 50%;
+        width: 190px;
+        height: 180px;
+    }
+    
+    .Card {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Card {
+        flex-direction: column;
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Card {
+        padding: 0px;
+        width: 375px;
+    }
+
+    .CardTitleText {
+        text-align: center;
+    }
+
+    .LowerCard p {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .RightCard {
+        margin: 0;
+    }
+
+    .Image {
+        margin-bottom: 15px;
+    }
 }
