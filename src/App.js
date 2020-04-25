@@ -13,7 +13,6 @@ function App() {
             <Card/>
           </Container>
         </ParticleBackground>
-        <Footer/>
     </div>
   );
 }

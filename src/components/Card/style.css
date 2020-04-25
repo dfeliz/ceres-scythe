@@ -15,6 +15,7 @@
 
 .UpperCard {
     text-align: left;
+    margin-top: 35px;
 }
 
 .LeftCard {
@@ -22,7 +23,7 @@
 }
 
 .LowerCard {
-    padding-top: 5vh;
+    margin-top: 25px;
     text-align: left;
     font-size: 24px;
     font-weight: 200;
@@ -40,6 +41,13 @@
     border-radius: 50%;
     width: 290px;
     height: 280px;
+}
+
+.Contact {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 120px;
 }
 
 @media only screen and (max-height: 800px), screen and (max-width: 1600px) {
