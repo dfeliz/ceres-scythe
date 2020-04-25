@@ -1,12 +1,10 @@
 # Ceres-Scythe
 
 ## Description
-This my webpage repo, made in react. Currently not published.
+This my webpage, made with react.
 
 ## Completion
-- [ ] Main page (In progress)
-- [ ] Contact links
+- [x] Main info
+- [x] Contact links
 - [ ] Skills
-- [ ] Animations
-- [ ] Portfolio
 - [ ] Blog
