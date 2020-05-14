@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-    steamIcon,
     githubIcon,
     linkedinIcon,
 } from '../../static/res/icons';
