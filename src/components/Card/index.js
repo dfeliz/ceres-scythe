@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-    steamIcon,
     githubIcon,
     linkedinIcon,
 } from '../../static/res/icons';
@@ -43,12 +42,12 @@ const Card = () => (
                     text="LinkedIn"
                     color=""
                 />
-                <ContactBubble
+                {/* <ContactBubble
                     url="https://steamcommunity.com/id/foxxo990"
                     icon={steamIcon}
                     text="Steam"
                     color=""
-                />
+                /> */}
             </div>
         </div>
         
