@@ -37,7 +37,7 @@ const Card = () => (
                     color=""
                 />
                 <ContactBubble
-                    url="https://www.linkedin.com/in/daniel-feliz-2b1688159/"
+                    url="https://www.linkedin.com/in/dafeliz/"
                     icon={linkedinIcon}
                     text="LinkedIn"
                     color=""
