@@ -1,13 +1,16 @@
-import React from 'react';
-import FooterItem from '../FooterItem';
-import './style.css';
+import React from "react";
+import FooterItem from "../FooterItem";
+import { FooterContainer, LinkContainer } from "./style";
 
 const Footer = () => (
-    <div className="Footer">
-        <div className="LinkContainer">
-            <FooterItem name="LinkedIn" url="https://www.linkedin.com/in/daniel-feliz-2b1688159/"/>
-        </div>
-    </div>
-)
+  <FooterContainer>
+    <LinkContainer>
+      <FooterItem
+        name="LinkedIn"
+        url="https://www.linkedin.com/in/daniel-feliz-2b1688159/"
+      />
+    </LinkContainer>
+  </FooterContainer>
+);
 
 export default Footer;
