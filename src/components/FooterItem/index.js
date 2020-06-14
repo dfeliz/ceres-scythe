@@ -1,10 +1,10 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import { Item } from "./style";
 
-const FooterItem = (props) => (
-    <div className="FooterItem">
-        <a href={props.url}>{props.name}</a>
-    </div>
-)
+const FooterItem = ({ url, name }) => (
+  <Item>
+    <a href={url}>{name}</a>
+  </Item>
+);
 
 export default FooterItem;

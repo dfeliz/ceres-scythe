@@ -1,26 +1,15 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import { Bubble, ContactBubbleContainer } from "./style";
 
-const ContactBubble = ({
-  url,
-  icon,
-  text,
-  color,
-}) => (
-  <div className="ContactBubbleContainer">
+const ContactBubble = ({ url, icon, text, color }) => (
+  <ContactBubbleContainer>
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className="Bubble" style={{ backgroundColor: color }}>
-        <img
-          src={icon}
-          alt="contact-bubble-icon"
-          className="BubbleIcon"
-        />
-      </div>
-      <div className="ContactBubbleText">
-        {text}
-      </div>
+      <Bubble style={{ backgroundColor: color }}>
+        <img src={icon} alt="contact-bubble-icon" className="BubbleIcon" />
+      </Bubble>
+      <p>{text}</p>
     </a>
-  </div>
+  </ContactBubbleContainer>
 );
 
 export default ContactBubble;

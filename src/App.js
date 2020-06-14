@@ -2,17 +2,18 @@ import React from 'react';
 import Container from './components/Container';
 import Card from './components/Card';
 import ParticleBackground from './components/ParticleBackground';
+import { AppContainer } from './style'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <AppContainer>
         <ParticleBackground>
           <Container>
             <Card/>
           </Container>
         </ParticleBackground>
-    </div>
+    </AppContainer>
   );
 }
 

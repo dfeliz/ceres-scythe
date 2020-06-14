@@ -1,10 +1,6 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import { CardContainer } from "./style";
 
-const Container = (props) => (
-    <div className="Container">
-        {props.children}
-    </div>
-)
+const Container = ({ children }) => <CardContainer>{children}</CardContainer>;
 
 export default Container;
