@@ -37,7 +37,6 @@ export const CardContainer = styled.div`
   @media (max-width: 500px) {
     padding: 0px;
     width: 375px;
-    overflow-y: scroll;
 
     h3 {
       text-align: center;
@@ -51,18 +50,11 @@ export const PersonalPic = styled.img`
   width: 290px;
   height: 280px;
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1250px) {
     margin-top: 5vh;
     border-radius: 50%;
     width: 220px;
     height: 210px;
-  }
-
-  @media (max-width: 1250px) {
-    margin-top: 5vh;
-    border-radius: 50%;
-    width: 190px;
-    height: 180px;
   }
 
   @media (max-width: 900px) {
@@ -77,7 +69,9 @@ export const PersonalPic = styled.img`
 export const RightCard = styled.div`
   flex: 2;
   margin-left: 20px;
-
+  @media (min-width: 1250px) {
+    padding-right: 120px;
+  }
   @media (max-width: 500px) {
     margin: 0;
   }
