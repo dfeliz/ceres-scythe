@@ -1,7 +1,9 @@
-import React from "react";
-import { Bubble, ContactBubbleContainer } from "./style";
+import React from 'react';
+import { Bubble, ContactBubbleContainer } from './style';
 
-const ContactBubble = ({ url, icon, text, color }) => (
+const ContactBubble = ({
+  url, icon, text, color,
+}) => (
   <ContactBubbleContainer>
     <a href={url} target="_blank" rel="noopener noreferrer">
       <Bubble style={{ backgroundColor: color }}>

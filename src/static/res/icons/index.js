@@ -6,4 +6,4 @@ export {
   steamIcon,
   githubIcon,
   linkedinIcon,
-}
+};

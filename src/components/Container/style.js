@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  text-align: center;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 `;

@@ -1,6 +1,6 @@
-import React from "react";
-import FooterItem from "../FooterItem";
-import { FooterContainer, LinkContainer } from "./style";
+import React from 'react';
+import FooterItem from '../FooterItem';
+import { FooterContainer, LinkContainer } from './style';
 
 const Footer = () => (
   <FooterContainer>
