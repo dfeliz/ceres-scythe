@@ -1,10 +1,4 @@
 # Ceres-Scythe
 
 ## Description
-This my webpage, made with react.
-
-## Completion
-- [x] Main info
-- [x] Contact links
-- [ ] Skills
-- [ ] Blog
+This my profile web page, made with react.
