@@ -1,11 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  background-color: #000000aa;
   z-index: 1;
-  padding: 60px 60px 60px 68px;
   display: flex;
   flex-direction: row;
+  backdrop-filter: blur(6px);
+  background-color: #00000088;
+  padding: 60px 60px 60px 68px;
+  transition: opacity 1.5s, filter 1.5s linear;
 
   h3 {
     margin: 0;
