@@ -38,7 +38,8 @@ export const CardContainer = styled.div`
 
   @media (max-width: 500px) {
     width: 375px;
-
+    height: 86vh;
+    background-color: #00000008;
     h3 {
       text-align: center;
     }
