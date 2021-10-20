@@ -37,7 +37,6 @@ export const CardContainer = styled.div`
   }
 
   @media (max-width: 500px) {
-    padding: 0px;
     width: 375px;
 
     h3 {
@@ -95,6 +94,7 @@ export const LowerCard = styled.div`
   font-weight: 200;
 
   @media (max-width: 500px) {
+    padding: 0 12px;
     p {
       text-align: center;
       font-size: 22px;
