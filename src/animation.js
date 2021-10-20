@@ -5,8 +5,10 @@ export default () => {
   const SCREEN_HEIGHT = window.innerHeight
   const r = 450;
 
-  let mouseY = 0
+  let mouseY = 0;
+  let mouseX = 0;
   let windowHalfY = window.innerHeight / 2
+  let windowHalfX = window.innerWidth / 2
   let camera, scene, renderer;
 
   init();
@@ -90,33 +92,35 @@ export default () => {
     renderer.setSize( window.innerWidth, window.innerHeight );
   }
 
-  function onPointerMove( event ) {
-    if ( event.isPrimary === false ) return;
+  function onPointerMove(event) {
+    if (event.isPrimary === false) return;
 
     mouseY = event.clientY - windowHalfY;
+    mouseX = event.clientX - windowHalfX;
+  }
+
+  function render() {
+    camera.position.y += ( + mouseY + 200 - camera.position.y ) * .05;
+    camera.position.x += ( - mouseX + 200 - camera.position.x ) * .05;
+    camera.lookAt(scene.position);
+    renderer.render(scene, camera);
+
+    const time = Date.now() * 0.00001;
+
+    for (let i = 0; i < scene.children.length; i ++) {
+      const object = scene.children[i];
+      if (object.isLine) {
+        object.rotation.y = time * (i < 4 ? ( i + 1 ) : - ( i + 1 ));
+        if (i < 5) {
+          const scale = object.userData.originalScale * (i / 5 + 1) * (1 + 0.5 * Math.sin(7 * time));
+          object.scale.x = object.scale.y = object.scale.z = scale;
+        }
+      }
+    }
   }
 
   function animate() {
     requestAnimationFrame( animate );
     render();
-  }
-
-  function render() {
-    camera.position.y += ( - mouseY + 200 - camera.position.y ) * .05;
-    camera.lookAt( scene.position );
-    renderer.render( scene, camera );
-
-    const time = Date.now() * 0.0001;
-
-    for ( let i = 0; i < scene.children.length; i ++ ) {
-      const object = scene.children[ i ];
-      if ( object.isLine ) {
-        object.rotation.y = time * ( i < 4 ? ( i + 1 ) : - ( i + 1 ) );
-        if ( i < 5 ) {
-          const scale = object.userData.originalScale * ( i / 5 + 1 ) * ( 1 + 0.5 * Math.sin( 7 * time ) );
-          object.scale.x = object.scale.y = object.scale.z = scale;
-        }
-      }
-    }
   }
 }
