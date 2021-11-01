@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 
 import './index.css';
 import App from './App';
-import animation from './animation';
+import runAnimation from './extras/animation';
+import runInspectlet from './extras/inspectlet';
 import * as serviceWorker from './serviceWorker';
 
-animation();
+runInspectlet();
+runAnimation();
 
 ReactDOM.render(<App />,document.getElementById('root'));
 
