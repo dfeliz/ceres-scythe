@@ -31,7 +31,23 @@ const Card = () => {
           <h3>{Constants.TEXT.GREETING}</h3>
         </UpperCard>
         <LowerCard>
-          <p>{Constants.TEXT.PARAGRAPH}</p>
+          <p>
+            {Constants.TEXT.PARAGRAPH}
+            {/* TODO: Add a cool interaction with this click */}
+            {/* <span style={{ color: "#ff7700"}}> */}
+              {Constants.TEXT.NAME}
+            {/* </span> */}
+            {Constants.TEXT.REST}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://gbh.com.do"
+              style={{ color: "#ff7700"}}
+            >
+              {Constants.TEXT.COMPANY}
+            </a>
+            {Constants.TEXT.END}
+          </p>
         </LowerCard>
         <Contact>
           <ContactBubble

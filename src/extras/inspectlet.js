@@ -1,7 +1,8 @@
 export default () => {
     const inspectledId = process.env.REACT_APP_INSPECTLET_ID;
 
-    window.__insp = window.__insp || [];
+    const __insp = window.__insp || [];
+
     __insp.push(['wid', inspectledId]);
     var ldinsp = function() {
         if(typeof window.__inspld != "undefined") return;
@@ -12,7 +13,7 @@ export default () => {
         insp.type = 'text/javascript';
         insp.async = true;
         insp.id = "inspsync";
-        insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + `://cdn.inspectlet.com/inspectlet.js?wid=${inspectledId}&r=` + Math.floor(new Date().getTime()/3600000);
+        insp.src = ('https:' === document.location.protocol ? 'https' : 'http') + `://cdn.inspectlet.com/inspectlet.js?wid=${inspectledId}&r=` + Math.floor(new Date().getTime()/3600000);
         
         var x = document.getElementsByTagName('script')[0];
         x.parentNode.insertBefore(insp, x);
