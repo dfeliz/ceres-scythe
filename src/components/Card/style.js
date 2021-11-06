@@ -7,7 +7,6 @@ export const CardContainer = styled.div`
   backdrop-filter: blur(6px);
   background-color: #00000088;
   padding: 60px 60px 60px 68px;
-  transition: opacity 1.5s, filter 1.5s linear;
 
   h3 {
     margin: 0;
@@ -43,28 +42,6 @@ export const CardContainer = styled.div`
     h3 {
       text-align: center;
     }
-  }
-`;
-
-export const PersonalPic = styled.img`
-  margin-top: 5vh;
-  border-radius: 50%;
-  width: 290px;
-  height: 280px;
-
-  @media (max-width: 1250px) {
-    margin-top: 5vh;
-    border-radius: 50%;
-    width: 220px;
-    height: 210px;
-  }
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-  }
-
-  @media (max-width: 500px) {
-    margin-bottom: 15px;
   }
 `;
 

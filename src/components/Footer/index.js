@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterItem from '../FooterItem';
+import { FooterItem } from '../';
 import { FooterContainer, LinkContainer } from './style';
 
 const Footer = () => (

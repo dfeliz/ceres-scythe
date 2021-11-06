@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { githubIcon, linkedinIcon } from '../../static/res/icons';
+import { ContactBubble } from "../";
 import Constants from './constants';
-import ContactBubble from '../ContactBubbles';
 import ProfileImage from '../../static/res/IMG_8980.jpg';
+import { githubIcon, linkedinIcon } from '../../static/res/icons';
+
 import {
   CardContainer,
-  PersonalPic,
   RightCard,
   UpperCard,
   LeftCard,
@@ -14,17 +14,15 @@ import {
   Contact,
 } from './style';
 
-const Card = () => {
-  const [opacity, setOpacity] = useState(0);
+import {
+  PersonalPicBubble,
+} from '../';
 
-  setTimeout(() => {
-    setOpacity(1);
-  }, 1000)
-  
+const Card = () => {
   return(
-    <CardContainer style={{ opacity }}>
+    <CardContainer>
       <LeftCard>
-        <PersonalPic src={ProfileImage} alt="Me" />
+        <PersonalPicBubble src={ProfileImage} alt="Me" />
       </LeftCard>
       <RightCard>
         <UpperCard>

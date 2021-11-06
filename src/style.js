@@ -19,3 +19,13 @@ export const AppContainer = styled.div`
     color: #cecece;
   }
 `;
+
+export const CardContainer = styled.div`
+  display: flex;
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 1.5s, filter 1.5s linear;
+`;

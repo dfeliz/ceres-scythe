@@ -1,24 +1,32 @@
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import React, { useState } from 'react';
 
-import Container from './components/Container';
-import Card from './components/Card';
-import { AppContainer } from './style';
-
-const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
+import { AppContainer, CardContainer } from './style';
+import { PositionContext } from './context/position';
+import {
+  Card,
+  Christmas,
+} from './components';
 
 function App() {
-  useEffect(() => {
-    ReactGA.initialize(TRACKING_ID);
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, [])
-
+  const [personalPicRect, setPersonalPicRect] = useState({});
+  const [opacity, setOpacity] = useState(0);
+  
+  setTimeout(() => setOpacity(1), 1000)
+  
+  const positionContextValues = {
+    personalPicRect,
+    setPersonalPicRect,
+  };
+  
   return (
-      <AppContainer>
-        <Container>
+    <AppContainer>
+      <CardContainer style={{ opacity }}>
+        <PositionContext.Provider value={positionContextValues}>
+          <Christmas personalPicRect={personalPicRect} />
           <Card />
-        </Container>
-      </AppContainer>
+        </PositionContext.Provider>
+      </CardContainer>
+    </AppContainer>
   );
 }
 
