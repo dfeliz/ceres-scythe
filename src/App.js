@@ -21,7 +21,11 @@ function App({ runAnimation }) {
     if (isAnimationOn) {
       runAnimation();
     } else {
-      document.getElementById("background-animation").remove();
+      const background = document.getElementById("background-animation");
+
+      if (background) {
+        background.remove();
+      }
     }
   }, [isAnimationOn, runAnimation])
 
