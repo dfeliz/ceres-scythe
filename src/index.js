@@ -6,8 +6,6 @@ import App from './App';
 import runAnimation from './extras/animation';
 import * as serviceWorker from './serviceWorker';
 
-runAnimation();
-
-ReactDOM.render(<App />,document.getElementById('root'));
+ReactDOM.render(<App runAnimation={runAnimation} />,document.getElementById('root'));
 
 serviceWorker.unregister();

@@ -113,3 +113,14 @@ export const Contact = styled.div`
     justify-content: center;
   }
 `;
+
+export const WideContainer = styled.div`
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+`;
