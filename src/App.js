@@ -23,7 +23,7 @@ function App({ runAnimation }) {
     } else {
       document.getElementById("background-animation").remove();
     }
-  }, [isAnimationOn])
+  }, [isAnimationOn, runAnimation])
 
   const backgroundContextData = {
     isAnimationOn,
