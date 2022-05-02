@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { githubIcon, linkedinIcon } from '../../static/res/icons';
+import { blogIcon, githubIcon, linkedinIcon } from '../../static/res/icons';
 import Constants from './constants';
 import ContactBubble from '../ContactBubbles';
 import ProfileImage from '../../static/res/IMG_8980.jpg';
@@ -50,6 +50,12 @@ const Card = () => {
           </p>
         </LowerCard>
         <Contact>
+          <ContactBubble
+            url="https://blog.dfeliz.dev"
+            icon={blogIcon}
+            text="Blog"
+            color="#94004A"
+          />
           <ContactBubble
             url="https://github.com/dfeliz"
             icon={githubIcon}

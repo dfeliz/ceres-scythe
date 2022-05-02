@@ -20,7 +20,7 @@ const ContactBubble = ({
       rel="noopener noreferrer"
       onClick={() => trackOnClick(url)}
     >
-      <Bubble style={{ backgroundColor: color }}>
+      <Bubble style={{ backgroundColor: color, borderRadius: 99 }}>
         <img src={icon} alt="contact-bubble-icon" className="BubbleIcon" />
       </Bubble>
       <p>{text}</p>
