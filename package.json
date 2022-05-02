@@ -11,6 +11,7 @@
     "react-ga": "^3.3.0",
     "react-particles-js": "^2.7.0",
     "react-scripts": "^3.4.0",
+    "react-toggle": "^4.1.2",
     "styled-components": "^5.1.1",
     "three": "^0.133.1"
   },

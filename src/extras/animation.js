@@ -50,6 +50,7 @@ export default () => {
     }
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.domElement.id = "background-animation";
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
     document.body.appendChild(renderer.domElement);
@@ -100,8 +101,8 @@ export default () => {
   }
 
   function render() {
-    camera.position.y += ( + mouseY + 200 - camera.position.y ) * .05;
-    camera.position.x += ( - mouseX + 200 - camera.position.x ) * .05;
+    camera.position.y += ( + mouseY + 200 - camera.position.y ) * .02;
+    camera.position.x += ( - mouseX + 200 - camera.position.x ) * .02;
     camera.lookAt(scene.position);
     renderer.render(scene, camera);
 
